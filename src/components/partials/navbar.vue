@@ -63,31 +63,81 @@
               </svg>
             </span>
           </a>
-         
-         <!-- search bar here -->
-         <div class="search__area">
-         <span><svg xmlns="http://www.w3.org/2000/svg" width="1" height="30" viewBox="0 0 1 30" fill="none">
-<line opacity="0.1" x1="0.5" y1="5.82819e-08" x2="0.499997" y2="30" stroke="#2D2D2D"/>
-</svg></span>
 
- <div class="form-group has-search mx-3">
+          <!-- search area here -->
+          <div class="search__area">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1"
+                height="30"
+                viewBox="0 0 1 30"
+                fill="none"
+              >
+                <line
+                  opacity="0.1"
+                  x1="0.5"
+                  y1="5.82819e-08"
+                  x2="0.499997"
+                  y2="30"
+                  stroke="#2D2D2D"
+                />
+              </svg>
+            </span>
 
-  <!-- <span
+            <div>
+              <span></span>
+
+              <!-- search bar -->
+            </div>
+            <div class="input-group mx-2">
+              <span class="input-group-append">
+                <div class="input-group-text bg-inherit"   @mouseover="hover = !hover"
+      @mouseleave="hover = !hover"
+      :class="{ active: hover }">
+                  <i class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g opacity="0.5">
+                        <path
+                          d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+                          stroke="#2D2D2D"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.5 17.5L13.875 13.875"
+                          stroke="#2D2D2D"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </i>
+                </div>
+              </span>
+              <input
+                class="form-control "
+                type="search"
+                value="search"
+                id="example-search-input"
+              />
+            </div>
+            <!-- <span
       @mouseover="hover = !hover"
       @mouseleave="hover = !hover"
       :class="{ actives: hover }"
     >
       Hover me to 
     </span> -->
-
-    <span class=" form-control-feedback"></span>
-    <input type="text" class="form-control" placeholder="Search">
-  </div>
-
-   
-
-  
-         </div>
+          </div>
 
           <!-- <button class="navbar-toggler" style="color: lemonchiffon !important;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -97,7 +147,7 @@
             <ul class="navbar-nav mr-auto"></ul>
 
             <ul class="navbar-nav my-2 my-lg-0">
-              <li class="nav-item active">
+              <li class="nav-iem active">
                 <a class="nav-link mx-3" href="#">About</a>
               </li>
               <li class="nav-item active">
@@ -121,17 +171,19 @@
 </template>
 <script>
 export default {
-    data() {
-        return {
-             hover: false,
-        }
+  data() {
+    return {
+      hover: false,
     }
+  },
 }
 </script>
 <style scoped>
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 header {
   width: 100%;
   background: #fbfbfb;
+  padding: 12px 0px ;
 }
 
 .nav-item {
@@ -145,9 +197,19 @@ header {
 .actives {
   background: green;
 }
-.search__area{
-    display:flex;
-    	justify-content: center;
+.search__area {
+  display: flex;
+  flex-direction: row;
+}
+.bg-inherit{
+    background: inherit;
+}
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group>.input-group-append:last-child>.input-group-text:not(:last-child), .input-group>.input-group-append:not(:last-child)>.btn, .input-group>.input-group-append:not(:last-child)>.input-group-text, .input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text{
+    border: none;
+    cursor: pointer;
+}
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child){
+    border: none;
+    background: inherit;
 }
 </style>
-
