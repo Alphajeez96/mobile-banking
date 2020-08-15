@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+  <mnav></mnav>
     <router-view/>
   </div>
 </template>
 
 <style>
 :root{
+
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -27,4 +29,14 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
+
+<script>
+import mnav from './components/partials/navbar'
+export default {
+  components:{
+    mnav
+  }
+}
+</script>
