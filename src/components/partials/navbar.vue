@@ -4,7 +4,6 @@
       <!-- Navbar component here -->
       <section class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-
           <!-- Toggler here -->
           <span>
             <svg
@@ -33,9 +32,8 @@
 
           <a class="navbar-brand a-text mx-5 flex" href="#">
             <img src="../../assets/General/Logo.png" alt="Logo" />
-            <span class="mx-2 " >
-              <svg 
-         
+            <span class="mx-2">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -94,7 +92,7 @@
             <!-- search bar -->
 
             <div class="input-group mx-3">
-              <span class="input-group-append ">
+              <span class="input-group-append">
                 <div class="input-group-text bg-inherit">
                   <i>
                     <svg
@@ -131,7 +129,7 @@
                 id="example-search-input"
                 placeholder="Search"
               />
-            </div>  
+            </div>
           </div>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -145,24 +143,32 @@
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+                    width="25"
+                    height="26"
+                    viewBox="0 0 25 26"
                     fill="none"
                   >
                     <path
-                      d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+                      d="M18 10C18 8.4087 17.3679 6.88258 16.2426 5.75736C15.1174 4.63214 13.5913 4 12 4C10.4087 4 8.88258 4.63214 7.75736 5.75736C6.63214 6.88258 6 8.4087 6 10C6 17 3 19 3 19H21C21 19 18 17 18 10Z"
                       stroke="#2D2D2D"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
-                      d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21"
+                      d="M13.73 23C13.5542 23.3031 13.3018 23.5547 12.9982 23.7295C12.6946 23.9044 12.3504 23.9965 12 23.9965C11.6496 23.9965 11.3054 23.9044 11.0018 23.7295C10.6982 23.5547 10.4458 23.3031 10.27 23"
                       stroke="#2D2D2D"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="19.0869"
+                      cy="5.5"
+                      r="4.5"
+                      fill="#E13071"
+                      stroke="#FCFCFC"
+                      stroke-width="2"
                     />
                   </svg>
                 </span>
@@ -173,11 +179,11 @@
                 <button type="button" class="owner__btn">
                   <span class="badge">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="61"
+                      width="19"
                       height="13"
-                      viewBox="0 0 61 13"
+                      viewBox="0 0 19 13"
                       fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         d="M6.49999 11.9167C6.49999 11.9167 10.8333 9.75001 10.8333 6.50001V2.70834L6.49999 1.08334L2.16666 2.70834V6.50001C2.16666 9.75001 6.49999 11.9167 6.49999 11.9167Z"
@@ -186,12 +192,9 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       />
-                      <path
-                        d="M24.98 10.09C24.2733 10.09 23.6567 9.94333 23.13 9.65C22.61 9.35 22.2067 8.92333 21.92 8.37C21.64 7.81667 21.5 7.17 21.5 6.43C21.5 5.69 21.64 5.04667 21.92 4.5C22.2067 3.95333 22.61 3.53333 23.13 3.24C23.6567 2.94 24.2733 2.79 24.98 2.79C25.6867 2.79 26.3 2.94 26.82 3.24C27.34 3.53333 27.74 3.95333 28.02 4.5C28.3 5.04667 28.44 5.69 28.44 6.43C28.44 7.17 28.3 7.81667 28.02 8.37C27.74 8.92333 27.34 9.35 26.82 9.65C26.3 9.94333 25.6867 10.09 24.98 10.09ZM24.98 8.87C25.58 8.87 26.0467 8.66 26.38 8.24C26.72 7.82 26.89 7.21667 26.89 6.43C26.89 5.64333 26.72 5.04333 26.38 4.63C26.0467 4.21667 25.58 4.01 24.98 4.01C24.38 4.01 23.91 4.21667 23.57 4.63C23.2367 5.04333 23.07 5.64333 23.07 6.43C23.07 7.22333 23.2367 7.83 23.57 8.25C23.91 8.66333 24.38 8.87 24.98 8.87ZM39.8239 2.88L37.2939 10H36.0439L34.3839 5.29L32.7139 10H31.4639L28.9339 2.88H30.5239L32.1639 7.8L33.8839 2.88H34.9739L36.6539 7.87L38.3339 2.88H39.8239ZM46.8937 2.88V10H45.7337L42.1837 5.46V10H40.7237V2.88H41.8737L45.4237 7.41V2.88H46.8937ZM48.3213 2.88H53.2313V4.09H49.8413V5.77H53.0213V6.99H49.8413V8.79H53.2313V10H48.3213V2.88ZM60.3177 10H58.6677L57.7577 7.63C57.6843 7.44333 57.571 7.31333 57.4177 7.24C57.271 7.16667 57.0843 7.13 56.8577 7.13H55.8477V10H54.3077V2.88H57.4777C58.3043 2.88 58.931 3.06 59.3577 3.42C59.7843 3.78 59.9977 4.29667 59.9977 4.97C59.9977 5.44333 59.871 5.85 59.6177 6.19C59.371 6.53 59.0143 6.77333 58.5477 6.92C58.9677 7.00667 59.271 7.29667 59.4577 7.79L60.3177 10ZM57.2477 5.94C57.6943 5.94 58.021 5.86667 58.2277 5.72C58.4343 5.56667 58.5377 5.33 58.5377 5.01C58.5377 4.69 58.4343 4.45667 58.2277 4.31C58.021 4.15667 57.6943 4.08 57.2477 4.08H55.8277V5.94H57.2477Z"
-                        fill="#FCFCFC"
-                      />
                       <line opacity="0.15" x1="18.5" y1="2" x2="18.5" y2="12" stroke="#FCFCFC" />
                     </svg>
+                    <span class="owner px-1">OWNER</span>
                   </span>
                 </button>
               </li>
@@ -226,13 +229,13 @@
                 </span>
               </li>
 
-              <li class="mx-3">
-                <img :src="user.path" alt="user" />
+              <li class="mx-3 userprofile">
+                <img :src="user.path"  alt="user" />
               </li>
-              <li>
+
+              <li class="username">
                 {{ user.name}}
-                <br />
-                <span>{{user.email}}</span>
+                <span class="useremail"> {{user.email}}</span>
               </li>
 
               <li class="mx-3">
@@ -268,7 +271,7 @@ export default {
     return {
       hover: false,
       user: {
-        path: "../../assets/Vectors/user1.png",
+        path: "https://res.cloudinary.com/alphajeez/image/upload/v1597615351/user1_vlpp2n.png",
         name: "Chioma Davis",
         email: "Chioma@natterbase",
       },
@@ -277,7 +280,6 @@ export default {
 };
 </script>
 <style scoped>
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 header {
   width: 100%;
   background: #fbfbfb;
@@ -287,8 +289,13 @@ header {
 .actives {
   background: green;
 }
-.navbar-nav{
+.navbar-nav {
   margin-bottom: -20px;
+}
+.owner {
+  font-size: var(--primary-font-10);
+  color: #fcfcfc;
+  font-family: var(--muli-font);
 }
 .bg-inherit {
   background: inherit;
@@ -329,13 +336,30 @@ input[type="search"]:focus {
   box-shadow: none;
   outline: 0 none;
   border: 2px solid rgba(0, 0, 0, 0.15);
- 
+}
+.userprofile{
+  position: relative;
+  bottom: 2px;
+}
+svg{
+  cursor: pointer;
+}
+.username{
+  color: #03293D;
+  font-weight: 600;
+  font-size: (--main-font-size);
+}
+.useremail{
+  color: #23B3E8;
+  font-weight: 600;
+  font-size: var(--primary-font-10);
+  position: relative;
+  bottom: 10px;
 }
 
-::placeholder{
-    color: #2D2D2D;
-   
-opacity: 0.3;
-font-size: var(--main-font-size)
+::placeholder {
+  color: #2d2d2d;
+  opacity: 0.3;
+  font-size: var(--main-font-size);
 }
 </style>

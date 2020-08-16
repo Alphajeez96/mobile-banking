@@ -8,9 +8,10 @@
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&family=Nunito+Sans:wght@300;400;600&display=swap');
 :root {
   --background-color: #f7f7f7;
+  --muli-font: 'Mulish', sans-serif;
   --primary-font-family: "Nunito Sans", sans-serif;
   --weight-300: 300;
   --weight-400: 400;
