@@ -230,12 +230,12 @@
               </li>
 
               <li class="mx-3 userprofile">
-                <img :src="user.path"  alt="user" />
+                <img :src="user.path" alt="user" />
               </li>
 
               <li class="username">
                 {{ user.name}}
-                <span class="useremail"> {{user.email}}</span>
+                <span class="useremail">{{user.email}}</span>
               </li>
 
               <li class="mx-3">
@@ -271,7 +271,8 @@ export default {
     return {
       hover: false,
       user: {
-        path: "https://res.cloudinary.com/alphajeez/image/upload/v1597615351/user1_vlpp2n.png",
+        path:
+          "https://res.cloudinary.com/alphajeez/image/upload/v1597615351/user1_vlpp2n.png",
         name: "Chioma Davis",
         email: "Chioma@natterbase",
       },
@@ -337,20 +338,20 @@ input[type="search"]:focus {
   outline: 0 none;
   border: 2px solid rgba(0, 0, 0, 0.15);
 }
-.userprofile{
+.userprofile {
   position: relative;
   bottom: 2px;
 }
-svg{
+svg {
   cursor: pointer;
 }
-.username{
-  color: #03293D;
+.username {
+  color: #03293d;
   font-weight: 600;
   font-size: (--main-font-size);
 }
-.useremail{
-  color: #23B3E8;
+.useremail {
+  color: #23b3e8;
   font-weight: 600;
   font-size: var(--primary-font-10);
   position: relative;

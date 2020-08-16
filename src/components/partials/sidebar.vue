@@ -151,4 +151,21 @@ export default {
 .logout {
   margin-top: 100px;
 }
+
+/* Scroll bar here */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #052231; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 </style>
