@@ -139,7 +139,7 @@
 
             <!-- Notification panel here -->
 
-            <ul class="navbar-nav my-2 my-lg-0">
+            <ul class="navbar-nav">
               <!-- Notification Icon  -->
               <li class="mx-3">
                 <span>
@@ -281,13 +281,15 @@ export default {
 header {
   width: 100%;
   background: #fbfbfb;
-  padding: 8px 0px;
+  padding: 12px 0px;
 }
 
 .actives {
   background: green;
 }
-
+.navbar-nav{
+  margin-bottom: -20px;
+}
 .bg-inherit {
   background: inherit;
 }
