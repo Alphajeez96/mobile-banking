@@ -8,7 +8,7 @@
 
 <script>
 import topnav from '../partials/topnav'
-import backlog from './backlog'
+import backlog from '../Layout/backlog'
 export default {
   name: 'page1',
   components: {
@@ -16,8 +16,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
