@@ -177,7 +177,7 @@
                 </span>
               </li>
 
-             <!-- Owner badge -->
+              <!-- Owner badge -->
               <li class="mx-3">
                 <button type="button" class="owner__btn">
                   <span class="badge">
@@ -236,7 +236,7 @@
               </li>
 
               <li class="mx-3">
-                <img :src="user.path"  alt='user' />
+                <img :src="user.path" alt="user" />
               </li>
               <li>
                 {{ user.name}}

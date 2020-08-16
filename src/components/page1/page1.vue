@@ -1,16 +1,18 @@
 <template>
   <div>
   <topnav></topnav> 
-   This is Page1
+  <backlog></backlog>
+  
   </div>
 </template>
 
 <script>
 import topnav from '../partials/topnav'
+import backlog from './backlog'
 export default {
   name: 'page1',
   components: {
-    topnav
+    topnav,backlog
   }
 }
 </script>

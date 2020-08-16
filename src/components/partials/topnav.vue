@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
-  <!-- top nav here -->
-    <div class="d-flex bd-highlight">
-      <div class="flex-fill bd-highlight">
+  <div class="container pl-0 ">
+    <div class="d-flex bd-highlight ">
+      <!-- top nav here -->
+      <div class="flex-fill bd-highlight ">
         <div class="top__nav d-flex">
           <ul class="border-b d-inline-flex">
             <a href class="active top__nav__link">
@@ -24,13 +24,19 @@
         </div>
       </div>
 
-       <!-- Top nav second division here -->
-      <div class="p-2 flex-fill bd-highlight">
+      <!-- Top nav second division here -->
+      <div class="mt-4 flex-fill d-flex bd-highlight">
+        <!-- Toggle Switch  here -->
+        <p class="mx-3">All Task</p>
+        <label class="switch mx-3">
+          <input type="checkbox" checked />
+          <span class="slider round"></span>
+        </label>
+        <p class="mx-3">All Modules</p>
 
-      
-       <!-- Project deadline  here -->
+        <!-- Project deadline  here -->
         <div class="d-flex">
-          <span>
+          <span class>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -56,14 +62,14 @@
               />
             </svg>
           </span>
-          <p>
-            Project Dealine:
+          <p class="mx-2">
+            Project Dealine :
             <span>{{duration}}</span>
           </p>
         </div>
       </div>
-    
     </div>
+  
   </div>
 </template>
 
@@ -102,5 +108,62 @@ ul {
 }
 a {
   text-decoration: none !important;
+}
+
+/* switch toggle here */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 1px;
+  bottom: 5px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #f15832;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 </style>
