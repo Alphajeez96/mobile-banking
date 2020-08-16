@@ -4,7 +4,8 @@
       <!-- Navbar component here -->
       <section class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-        <!-- Toggler here -->
+          <!-- Toggler here -->
+
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -29,10 +30,10 @@
           </span>
 
           <!-- Logo here -->
+
           <a class="navbar-brand a-text mx-5 flex" href="#">
             <img src="../../assets/General/Logo.png" alt="Logo" />
             <span class="mx-2">
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -89,18 +90,12 @@
               </svg>
             </span>
 
-            <div>
-              <span></span>
+            <!-- search bar -->
 
-              <!-- search bar -->
-            </div>
             <div class="input-group mx-2">
               <span class="input-group-append">
-                <div
-                  class="input-group-text bg-inherit"
-   
-                >
-                  <i class="">
+                <div class="input-group-text bg-inherit">
+                  <i class>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -131,8 +126,8 @@
               <input
                 class="form-control"
                 type="search"
-                value="search"
                 id="example-search-input"
+                placeholder="Search"
               />
             </div>
             <!-- <span
@@ -141,21 +136,22 @@
       :class="{ actives: hover }"
     >
       Hover me to 
-    </span> -->
+            </span>-->
           </div>
 
           <!-- <button class="navbar-toggler" style="color: lemonchiffon !important;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button> -->
+          </button>-->
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto"></ul>
 
             <!-- Notification panel here -->
-            
+
             <ul class="navbar-nav my-2 my-lg-0">
+              <!-- Notification Icon  -->
               <li class="mx-3">
-                <span >
+                <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -181,6 +177,7 @@
                 </span>
               </li>
 
+             <!-- Owner badge -->
               <li class="mx-3">
                 <button type="button" class="owner__btn">
                   <span class="badge">
@@ -202,14 +199,7 @@
                         d="M24.98 10.09C24.2733 10.09 23.6567 9.94333 23.13 9.65C22.61 9.35 22.2067 8.92333 21.92 8.37C21.64 7.81667 21.5 7.17 21.5 6.43C21.5 5.69 21.64 5.04667 21.92 4.5C22.2067 3.95333 22.61 3.53333 23.13 3.24C23.6567 2.94 24.2733 2.79 24.98 2.79C25.6867 2.79 26.3 2.94 26.82 3.24C27.34 3.53333 27.74 3.95333 28.02 4.5C28.3 5.04667 28.44 5.69 28.44 6.43C28.44 7.17 28.3 7.81667 28.02 8.37C27.74 8.92333 27.34 9.35 26.82 9.65C26.3 9.94333 25.6867 10.09 24.98 10.09ZM24.98 8.87C25.58 8.87 26.0467 8.66 26.38 8.24C26.72 7.82 26.89 7.21667 26.89 6.43C26.89 5.64333 26.72 5.04333 26.38 4.63C26.0467 4.21667 25.58 4.01 24.98 4.01C24.38 4.01 23.91 4.21667 23.57 4.63C23.2367 5.04333 23.07 5.64333 23.07 6.43C23.07 7.22333 23.2367 7.83 23.57 8.25C23.91 8.66333 24.38 8.87 24.98 8.87ZM39.8239 2.88L37.2939 10H36.0439L34.3839 5.29L32.7139 10H31.4639L28.9339 2.88H30.5239L32.1639 7.8L33.8839 2.88H34.9739L36.6539 7.87L38.3339 2.88H39.8239ZM46.8937 2.88V10H45.7337L42.1837 5.46V10H40.7237V2.88H41.8737L45.4237 7.41V2.88H46.8937ZM48.3213 2.88H53.2313V4.09H49.8413V5.77H53.0213V6.99H49.8413V8.79H53.2313V10H48.3213V2.88ZM60.3177 10H58.6677L57.7577 7.63C57.6843 7.44333 57.571 7.31333 57.4177 7.24C57.271 7.16667 57.0843 7.13 56.8577 7.13H55.8477V10H54.3077V2.88H57.4777C58.3043 2.88 58.931 3.06 59.3577 3.42C59.7843 3.78 59.9977 4.29667 59.9977 4.97C59.9977 5.44333 59.871 5.85 59.6177 6.19C59.371 6.53 59.0143 6.77333 58.5477 6.92C58.9677 7.00667 59.271 7.29667 59.4577 7.79L60.3177 10ZM57.2477 5.94C57.6943 5.94 58.021 5.86667 58.2277 5.72C58.4343 5.56667 58.5377 5.33 58.5377 5.01C58.5377 4.69 58.4343 4.45667 58.2277 4.31C58.021 4.15667 57.6943 4.08 57.2477 4.08H55.8277V5.94H57.2477Z"
                         fill="#FCFCFC"
                       />
-                      <line
-                        opacity="0.15"
-                        x1="18.5"
-                        y1="2"
-                        x2="18.5"
-                        y2="12"
-                        stroke="#FCFCFC"
-                      />
+                      <line opacity="0.15" x1="18.5" y1="2" x2="18.5" y2="12" stroke="#FCFCFC" />
                     </svg>
                   </span>
                 </button>
@@ -224,13 +214,7 @@
                     viewBox="0 0 25 31"
                     fill="none"
                   >
-                    <ellipse
-                      cx="12.5345"
-                      cy="11.0095"
-                      rx="8.46888"
-                      ry="8.63826"
-                      fill="white"
-                    />
+                    <ellipse cx="12.5345" cy="11.0095" rx="8.46888" ry="8.63826" fill="white" />
                     <path
                       d="M14.5193 12.7697H10.7415L9.96984 14.5665H8.16156L11.8933 6.44651H13.333L17.0647 14.5665H15.291L14.5193 12.7697ZM13.9319 11.4106L12.6304 8.36996L11.3289 11.4106H13.9319Z"
                       fill="#00B394"
@@ -252,10 +236,10 @@
               </li>
 
               <li class="mx-3">
-                <img src="`${user.url}`" alt="" />
+                <img :src="`${user.path}.${user.extension}`"  alt='user' />
               </li>
               <li>
-              {{  user.name}}
+                {{ user.name}}
                 <br />
                 <span>{{user.email}}</span>
               </li>
@@ -292,14 +276,15 @@ export default {
   data() {
     return {
       hover: false,
-      user:{
-          url:'../../assets/Vectors/Rectangle 4 (6).png',
-          name:'Chioma Davis',
-          email: 'Chioma@natterbase'
-      }
-    }
+      user: {
+        path: "../../assets/Vectors/user1",
+        extension:'png',
+        name: "Chioma Davis",
+        email: "Chioma@natterbase",
+      },
+    };
   },
-}
+};
 </script>
 <style scoped>
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
@@ -310,7 +295,7 @@ header {
 }
 
 .nav-item {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #000000;
   font-weight: 600;
   font-size: 14px;
@@ -352,5 +337,16 @@ header {
   border-radius: 5px;
   border: none;
   padding: 1px 5px;
+}
+.owner__btn:focus,
+[type="button"]:focus {
+  outline: none;
+}
+
+input[type="search"]:focus {
+  border-color: #f9f9f9;
+  box-shadow: none;
+  outline: 0 none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 </style>
