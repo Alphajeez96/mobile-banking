@@ -3,7 +3,7 @@
     <!-- Todo Header Column here -->
     <div class="col">
       <div class="row header">
-        <div >{{title}}</div>
+        <div>{{title}}</div>
         <div class="col">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,41 +38,30 @@
       </div>
     </div>
 
-     <!-- Add log card  here -->
-          <div class="add__log__card mt-3">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="9"
-                height="9"
-                viewBox="0 0 9 9"
-                fill="none"
-              >
-                <path
-                  d="M9 5.14286H5.14286V9H3.85714V5.14286H0V3.85714H3.85714V0H5.14286V3.85714H9V5.14286Z"
-                  fill="#23B3E8"
-                />
-              </svg>
-            </span>
-          </div>
+    <!-- Add log card  here -->
+    <div class="add__log__card mt-3">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+          <path
+            d="M9 5.14286H5.14286V9H3.85714V5.14286H0V3.85714H3.85714V0H5.14286V3.85714H9V5.14286Z"
+            fill="#23B3E8"
+          />
+        </svg>
+      </span>
+    </div>
 
- <!-- Todo card place hoders here  here -->
-<div class="placeholder__cards mt-3">
-
-</div>
- 
-
+    <!-- Todo card place hoders here  here -->
+    <div class="placeholder__cards mt-3"></div>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'todos',
-    props: ['title']
-}
+  name: "todos",
+  props: ["title"],
+};
 </script>
 <style scoped>
-
 .add__log__card {
   background: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -80,9 +69,9 @@ export default {
   height: 30px;
   cursor: pointer;
 }
-.placeholder__cards{
-background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-height: 120vh
+.placeholder__cards {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  height: 120vh;
 }
 </style>
 

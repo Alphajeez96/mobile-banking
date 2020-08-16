@@ -1,18 +1,44 @@
 <template>
   <div>
-  <topnav></topnav> 
-  <backlog></backlog>
-  
+    <topnav></topnav>
+
+    <div class="container mt-4">
+      <div class="row row-cols-5 main">
+        <!-- Backlog here -->
+        <backlog></backlog>
+
+        <!-- Todo Header Column here -->
+        <div class="col">
+          <todo title="Todo"></todo>
+        </div>
+
+        <div class="col">
+          <todo title="In Progress"></todo>
+        </div>
+
+        <div class="col">
+          <todo title="In Review"></todo>
+        </div>
+
+        <div class="col">
+          <todo title="Done"></todo>
+        </div>
+        
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import topnav from '../partials/topnav'
-import backlog from '../Layout/backlog'
+import topnav from "../partials/topnav";
+import backlog from "../Layout/backlog";
+import todo from "../Layout/todos";
 export default {
-  name: 'page1',
+  name: "page1",
   components: {
-    topnav,backlog
-  }
-}
+    topnav,
+    backlog,
+    todo,
+  },
+};
 </script>

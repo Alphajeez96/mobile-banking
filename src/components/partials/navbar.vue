@@ -4,8 +4,8 @@
       <!-- Navbar component here -->
       <section class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <!-- Toggler here -->
 
+          <!-- Toggler here -->
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +33,9 @@
 
           <a class="navbar-brand a-text mx-5 flex" href="#">
             <img src="../../assets/General/Logo.png" alt="Logo" />
-            <span class="mx-2">
-              <svg
+            <span class="mx-2 " >
+              <svg 
+         
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -70,8 +71,8 @@
 
           <!-- search area here -->
 
-          <div class="search__area">
-            <span>
+          <div class="d-flex flex-row">
+            <span class="pt-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1"
@@ -92,10 +93,10 @@
 
             <!-- search bar -->
 
-            <div class="input-group mx-2">
-              <span class="input-group-append">
+            <div class="input-group mx-3">
+              <span class="input-group-append ">
                 <div class="input-group-text bg-inherit">
-                  <i class>
+                  <i>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -123,25 +124,15 @@
                   </i>
                 </div>
               </span>
+
               <input
-                class="form-control"
+                class="form-control pt-2"
                 type="search"
                 id="example-search-input"
                 placeholder="Search"
               />
-            </div>
-            <!-- <span
-      @mouseover="hover = !hover"
-      @mouseleave="hover = !hover"
-      :class="{ actives: hover }"
-    >
-      Hover me to 
-            </span>-->
+            </div>  
           </div>
-
-          <!-- <button class="navbar-toggler" style="color: lemonchiffon !important;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-          </button>-->
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto"></ul>
@@ -293,21 +284,10 @@ header {
   padding: 8px 0px;
 }
 
-.nav-item {
-  font-family: "Poppins", sans-serif;
-  color: #000000;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  font-style: normal;
-}
 .actives {
   background: green;
 }
-.search__area {
-  display: flex;
-  flex-direction: row;
-}
+
 .bg-inherit {
   background: inherit;
 }
@@ -346,6 +326,14 @@ input[type="search"]:focus {
   border-color: #f9f9f9;
   box-shadow: none;
   outline: 0 none;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(0, 0, 0, 0.15);
+ 
+}
+
+::placeholder{
+    color: #2D2D2D;
+   
+opacity: 0.3;
+font-size: var(--main-font-size)
 }
 </style>
