@@ -236,7 +236,7 @@
               </li>
 
               <li class="mx-3">
-                <img :src="`${user.path}.${user.extension}`"  alt='user' />
+                <img :src="user.path"  alt='user' />
               </li>
               <li>
                 {{ user.name}}
@@ -277,8 +277,7 @@ export default {
     return {
       hover: false,
       user: {
-        path: "../../assets/Vectors/user1",
-        extension:'png',
+        path: "../../assets/Vectors/user1.png",
         name: "Chioma Davis",
         email: "Chioma@natterbase",
       },
@@ -291,7 +290,7 @@ export default {
 header {
   width: 100%;
   background: #fbfbfb;
-  padding: 12px 0px;
+  padding: 8px 0px;
 }
 
 .nav-item {

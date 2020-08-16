@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+   <sidenav></sidenav>
   <mnav></mnav>
+ 
     <router-view/>
   </div>
 </template>
@@ -34,9 +36,10 @@
 
 <script>
 import mnav from './components/partials/navbar'
+import sidenav from './components/partials/sidebar'
 export default {
   components:{
-    mnav
+    mnav, sidenav
   }
 }
 </script>
