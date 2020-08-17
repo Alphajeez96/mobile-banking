@@ -199,7 +199,7 @@
                 </button>
               </li>
 
-<!-- Medal  -->
+              <!-- Medal  -->
               <li class="mx-3">
                 <span>
                   <svg
@@ -230,7 +230,7 @@
                 </span>
               </li>
 
-<!-- Profile display here -->
+              <!-- Profile display here -->
               <li class="mx-3 userprofile">
                 <img :src="user.path" alt="user" />
               </li>
@@ -340,7 +340,7 @@ input[type="search"]:focus {
 .userprofile {
   position: relative;
   bottom: 2px;
-  right: -12px
+  right: -12px;
 }
 svg {
   cursor: pointer;

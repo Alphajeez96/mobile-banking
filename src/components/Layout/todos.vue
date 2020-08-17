@@ -4,7 +4,7 @@
     <div class="col">
       <div class="row header">
         <div>{{title}}</div>
-        <div class="col">
+        <div class="col dots">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="12"
@@ -77,6 +77,10 @@ export default {
   color: #03293d;
   font-size: var(--main-font-size);
   font-weight: Bold;
+}
+.dots{
+  position: relative;
+  left: 40px;
 }
 </style>
 

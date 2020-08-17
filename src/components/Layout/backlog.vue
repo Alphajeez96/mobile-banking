@@ -3,8 +3,8 @@
     <!-- Backlog Header COumn here -->
     <div class="col">
       <div class="row header">
-        <div class="col-2">Backlog</div>
-        <div class="col">
+        <div class="col-2">{{title}}</div>
+        <div class="col dots">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="12"
@@ -139,6 +139,7 @@
 <script>
 export default {
   name: "backlog",
+    props: ["title"],
   data() {
     return {
       date: "Aug 8",
@@ -196,5 +197,9 @@ export default {
   right: 20px;
   font-size: 10px;
   color: #a5a4a4;
+}
+.dots{
+  position: relative;
+  left: 60px;
 }
 </style>

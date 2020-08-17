@@ -18,7 +18,7 @@
                 <li>{{tab}}</li>
               </a>
             </ul>
-            <component :is="selected" class="tab"></component>
+             <!-- <component :is="selected" class="tab"></component> -->
           </div>
         </div>
 
@@ -26,7 +26,7 @@
         <div class="col-md-6 col-lg-6 mt-4 d-flex flex-row ">
         <div class="mx-3 "></div>
          <!-- Toggle Switch  here -->
-        <p class="mx-3 task">All Task</p>
+        <p class="mx-3 task" >All Task</p>
         <label class="switch ">
           <input type="checkbox" checked />
           <span class="slider round"></span>

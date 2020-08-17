@@ -1,11 +1,12 @@
 <template>
   <div>
+ 
     <topnav></topnav>
 
     <div class="container mt-4 ">
       <div class="row row-cols-5 main ml-5 pl-1">
         <!-- Backlog here -->
-        <backlog></backlog>
+        <backlog title="Backlog"></backlog>
 
         <!-- Todo Header Column here -->
         <div class="col">
@@ -40,5 +41,11 @@ export default {
     backlog,
     todo,
   },
+  data(){
+    return {
+      url: 'https://res.cloudinary.com/alphajeez/image/upload/v1597615351/user1_vlpp2n.png'
+    }
+  }
+  
 };
 </script>
