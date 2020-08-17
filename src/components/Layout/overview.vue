@@ -22,9 +22,7 @@ export default {
   font-weight: Bold;
 }
 .overview__card{
- 
      background: white;
- 
 height: 100vh;
 }
 </style>>

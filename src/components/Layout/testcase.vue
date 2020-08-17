@@ -19,18 +19,18 @@
         -->
 
         <div class="d-flex bd-highlight mb-2" v-for="i in 8" :key="i">
-          <div class="mr-auto bd-highlight">
+          <div class="mr-auto pt-3 px-3">
             <p>Make the Background Image blur</p>
           </div>
-          <div class="bd-highlight px-3">hhh</div>
+          <div class="pt-3 px-3">hhh</div>
         </div>
         
 <!--Test case buttons here-->
           <div class="d-flex bd-highlight">
-          <div class="mr-auto bd-highlight mb-4 px-3">
+          <div class="mr-auto mt-3 mb-5 px-3">
            <button class="new__test__btn"> New Test Case</button>
           </div>
-          <div class="bd-highlight mb-4 px-3">   <button class="test__btn">Test </button></div>
+          <div class=" mb-5 mt-3 px-3">   <button class="test__btn">Test </button></div>
         </div>
       </div>
     </div>
@@ -55,11 +55,11 @@ export default {
   color: #03293d;
   font-weight: bold;
   font-size: 14px;
-  padding: 10px;
+  
 
 }
 .button__holder {
-  padding: 10px;
+
 }
 .new__test__btn{
 background: #23B3E8;
