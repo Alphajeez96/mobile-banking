@@ -1,31 +1,41 @@
 <template>
-  <div class="container pl-0 ">
-    <div class="d-flex bd-highlight mx-3">
-      <!-- top nav here -->
-      <div class="flex-fill bd-highlight ">
-        <div class="top__nav d-flex">
-          <ul class="border-b d-inline-flex" >
-            <a href class="active top__nav__link" v-for="tab in tabs " :key="tab"  @click="selected = tab; "  :class="['tab-btn', { active: selected === tab }]">
-              <li>{{tab}}</li>
-            </a>     
-          </ul>
-             <component :is="selected" class="tab"></component>
+  <div>
+    <div class="container pl-0">
+      <div class="row">
+        <!-- Top Nav first division column here-->
+        <div class="col-md-6 col-lg-6 ">
+        
+          <div class="top__nav ">
+            <ul class="d-inline-flex ">
+              <a
+                href
+                class="active top__nav__link"
+                v-for="tab in tabs "
+                :key="tab"
+                @click="selected = tab; "
+                :class="['tab-btn', { active: selected === tab }]"
+              >
+                <li>{{tab}}</li>
+              </a>
+            </ul>
+             <!-- <component :is="selected" class="tab"></component> -->
+          </div>
         </div>
-      </div>
 
-      <!-- Top nav second division here -->
-      <div class="mt-4 flex-fill d-flex bd-highlight">
-        <!-- Toggle Switch  here -->
-        <p class="mx-3 task">All Task</p>
+  <!-- Top Nav Second division column here-->
+        <div class="col-md-6 col-lg-6 mt-4 d-flex flex-row ">
+        <div class="mx-3 "></div>
+         <!-- Toggle Switch  here -->
+        <p class="mx-3 task" >All Task</p>
         <label class="switch ">
           <input type="checkbox" checked />
           <span class="slider round"></span>
         </label>
-        <p class="mx-4 modules">All Modules</p>
+        <p class="mx-3 modules">All Modules</p>
 
-        <!-- Project deadline  here -->
-        <div class="d-flex">
-          <span class='mx-2'>
+        <div class='mx-4'></div>
+
+         <span class='mx-2'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -55,24 +65,23 @@
             Project Dealine :
             <span>{{duration}}</span>
           </p>
+
         </div>
+
       </div>
+<hr class="border-b">
     </div>
-  
+    
   </div>
 </template>
 
 <script>
-import page1 from '../page1/page1'
 export default {
-  components:{
-    page1
-  },
+  props:['duration'],
   data() {
     return {
-       tabs: ["Overview", "Teams", "Modules", "Files", "Progress"],
-       selected:'page1',
-      duration: "6 weeks",
+      tabs: ["Overview", "Teams", "Modules", "Files", "Progress"],
+      selected: "page1",
     };
   },
 };
@@ -89,15 +98,18 @@ ul {
 }
 
 .border-b {
-  border-bottom: 1px solid #797979;
+    width: 90%;
+    position: relative;
+    bottom: 32px;
+    left: 30px;
 }
 .top__nav__link {
   color: #03293d;
   font-weight: bold;
   line-height: 40px;
   padding: 0px 20px;
- font-size: var(--main-font-size);
- opacity: 0.5;
+  font-size: var(--main-font-size);
+  opacity: 0.5;
 }
 
 .top__nav__link .active {
@@ -107,6 +119,12 @@ ul {
 a {
   text-decoration: none !important;
 }
+/*
+.active{
+    border-bottom: 1px solid red;
+    position: relative;
+    top: px;
+}*/
 
 /* switch toggle here */
 
@@ -130,7 +148,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #23B3E8;;
+  background-color: #23b3e8;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -164,18 +182,18 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.task{
-  color: #23B3E8;
+.task {
+  color: #23b3e8;
   font-weight: bold;
   font-size: var(--main-font-size);
 }
-.modules{
- color: #F15832;;
+.modules {
+  color: #f15832;
   font-weight: bold;
   font-size: var(--main-font-size);
 }
-.deadline{
-  color:#4DBD98;
+.deadline {
+  color: #4dbd98;
   font-size: var(--main-font-size);
   font-weight: bold;
 }
