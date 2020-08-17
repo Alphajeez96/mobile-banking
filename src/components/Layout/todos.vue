@@ -73,5 +73,10 @@ export default {
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   height: 120vh;
 }
+.header {
+  color: #03293d;
+  font-size: var(--main-font-size);
+  font-weight: Bold;
+}
 </style>
 

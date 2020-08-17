@@ -13,9 +13,6 @@
   --background-color: #f7f7f7;
   --muli-font: 'Mulish', sans-serif;
   --primary-font-family: "Nunito Sans", sans-serif;
-  --weight-300: 300;
-  --weight-400: 400;
-  --weight-600: 600;
   --main-font-size: 14px;
   --primary-font-10: 10px;
   --primary-font-size: 14px;

@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import topnav from "../partials/topnav";
+import topnav from "../partials/topnav2";
 import backlog from "../Layout/backlog";
 import todo from "../Layout/todos";
 export default {

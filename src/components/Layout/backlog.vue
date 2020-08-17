@@ -4,7 +4,7 @@
     <div class="col">
       <div class="row header">
         <div class="col-2">Backlog</div>
-        <div class="col ">
+        <div class="col">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="12"
@@ -115,7 +115,7 @@
                   />
                 </svg>
               </span>
-              <span>Due {{date}}</span>
+              <span class="mx-2">Due {{date}}</span>
             </p>
           </div>
           <!-- User Images here  here -->
@@ -138,7 +138,7 @@
 
 <script>
 export default {
-  name: 'backlog',
+  name: "backlog",
   data() {
     return {
       date: "Aug 8",
@@ -156,19 +156,21 @@ export default {
   height: 30px;
   cursor: pointer;
 }
-.header{
-  color: #03293D;
-    font-size: var(--main-font-size);
-  font-weight: 600;
+.header {
+  color: #03293d;
+  font-size: var(--main-font-size);
+  font-weight: Bold;
 }
 .backlog__card {
   background: #ffffff;
   border-radius: 5px;
+  cursor: pointer;
 }
 .text p {
   text-align: left;
   font-size: 10px;
-  padding: 0px 10px;
+  padding: 0px 8px;
+  color: #03293d;
 }
 .img__holder {
   position: relative;
@@ -195,5 +197,4 @@ export default {
   font-size: 10px;
   color: #a5a4a4;
 }
-
 </style>
