@@ -1,7 +1,7 @@
 <template>
   <div>
- 
-    <topnav></topnav>
+ <mnav imgPath='https://res.cloudinary.com/alphajeez/image/upload/v1597615351/user1_vlpp2n.png' username='Chioma Davis' useremail='Chioma@natterbase'></mnav>
+    <topnav duration='6 weeks'></topnav>
 
     <div class="container mt-4 ">
       <div class="row row-cols-5 main ml-5 pl-1">
@@ -31,12 +31,14 @@
 </template>
 
 <script>
-import topnav from "../partials/topnav2";
+import mnav from '../partials/navbar'
+import topnav from "../partials/topnav";
 import backlog from "../Layout/backlog";
 import todo from "../Layout/todos";
 export default {
   name: "page1",
   components: {
+    mnav,
     topnav,
     backlog,
     todo,

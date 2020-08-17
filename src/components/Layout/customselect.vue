@@ -1,6 +1,6 @@
 <template>
   <div class="custom-select" :tabindex="tabindex" @blur="open = false">
-    <v-select    class="style-chooser" :options="options"></v-select>
+   
   </div>
 </template>
 
@@ -10,11 +10,7 @@ export default {
 
   data() {
     return {
-    options: [
-      'foo',
-      'bar',
-      'baz'
-    ]
+  
     };
   },
  

@@ -232,12 +232,12 @@
 
               <!-- Profile display here -->
               <li class="mx-3 userprofile">
-                <img :src="user.path" alt="user" />
+                <img :src="img" alt="user" />
               </li>
 
               <li class="username">
-                {{ user.name}}
-                <span class="useremail">{{user.email}}</span>
+                {{username}}
+                <span class="useremail">{{useremail}}</span>
               </li>
 
               <li class="mx-3">
@@ -269,6 +269,7 @@
 
 <script>
 export default {
+  props: ['imgPath', 'username', 'useremail'],
   data() {
     return {
       hover: false,
@@ -279,7 +280,14 @@ export default {
         email: "Chioma@natterbase",
       },
     };
+
   },
+  computed:{
+    img() {
+return this.imgPath
+    }
+  }
+
 };
 </script>
 <style scoped>
