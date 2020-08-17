@@ -3,7 +3,7 @@
     <topnav></topnav>
 
     <div class="container mt-4 ">
-      <div class="row row-cols-5 main ml-5">
+      <div class="row row-cols-5 main ml-5 pl-1">
         <!-- Backlog here -->
         <backlog></backlog>
 

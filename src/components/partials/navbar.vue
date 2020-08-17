@@ -30,7 +30,7 @@
 
           <!-- Logo here -->
 
-          <a class="navbar-brand a-text mx-5 flex" href="#">
+          <a class="navbar-brand a-text mx-4 flex" href="#">
             <img src="../../assets/General/Logo.png" alt="Logo" />
             <span class="mx-2">
               <svg
