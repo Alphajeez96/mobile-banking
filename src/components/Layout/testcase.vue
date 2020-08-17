@@ -6,8 +6,17 @@
         <div>{{title}}</div> 
       </div>
 
-       <div class="Testcase__cards mt-3">
+       <div class="Testcase__cards text-left mt-3">
        
+       <div class="row" v-for="i in 8" :key="i">
+       <div class="col-8">
+       <p>Make the Background Image blur</p>
+       </div>
+
+        <div class="col-4 button__holder">
+       hhh
+       </div>
+       </div>
        </div>
     </div>
     </div>
@@ -26,6 +35,17 @@ export default {
 }
 .Testcase__cards{
      background: white;
-  height: 120vh;
+ 
+
+}
+.Testcase__cards p {
+    color: #03293D;
+    font-weight: bold;
+    font-size: 14px;
+ padding: 10px;
+    border-left: 1px solid red
+}
+.button__holder{
+       padding: 10px
 }
 </style>>
