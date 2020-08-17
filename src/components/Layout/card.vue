@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <div class="cards mx-2 mt-4">
+      <div class="cards bg mx-2 mt-4" :style="style">
         <div class="d-flex bd-highlight mb-3">
           <div class="p-2 bd-highlight">
             <svg
@@ -34,7 +34,12 @@
 <script>
 export default {
   name: "card",
-  props: ["title", "backgroundColor", "count"],
+  props: ["title", "color", "count"],
+  computed: {
+    style() {
+      return "background-color: " + this.color;
+    },
+  },
 };
 </script>
 <style scoped>
@@ -43,7 +48,6 @@ export default {
   height: 120px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-  background: black;
 }
 .count {
   color: white;
