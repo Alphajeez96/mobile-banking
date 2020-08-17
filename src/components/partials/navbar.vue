@@ -287,9 +287,6 @@ header {
   padding: 12px 0px;
 }
 
-.actives {
-  background: green;
-}
 .navbar-nav {
   margin-bottom: -20px;
 }

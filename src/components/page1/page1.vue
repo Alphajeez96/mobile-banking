@@ -2,8 +2,8 @@
   <div>
     <topnav></topnav>
 
-    <div class="container mt-4">
-      <div class="row row-cols-5 main">
+    <div class="container mt-4 ">
+      <div class="row row-cols-5 main ml-5">
         <!-- Backlog here -->
         <backlog></backlog>
 
