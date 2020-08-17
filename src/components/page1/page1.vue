@@ -27,6 +27,7 @@
         
       </div>
     </div>
+    <mfoot></mfoot>
   </div>
 </template>
 
@@ -35,6 +36,7 @@ import mnav from '../partials/navbar'
 import topnav from "../partials/topnav";
 import backlog from "../Layout/backlog";
 import todo from "../Layout/todos";
+import mfoot from '../partials/footer'
 export default {
   name: "page1",
   components: {
@@ -42,6 +44,7 @@ export default {
     topnav,
     backlog,
     todo,
+    mfoot
   },
   data(){
     return {

@@ -38,7 +38,7 @@
       <div class="border-b mb-4"></div>
 
       <!--Logout nav-items here -->
-      <span class="side__nav__items logout d-flex align-items-center px-3 py-3">
+      <span class="side__nav__items logout d-flex align-items-center px-3 py-3 mb-5 pb-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
