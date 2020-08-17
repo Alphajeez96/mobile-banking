@@ -16,8 +16,8 @@
     <testcases title="Added Test Case"></testcases>
       </div>
 
-         <div class="col-md-5">
-      sss
+         <div class="col-md-4">
+    <overview title="Quick Overview"></overview>
       </div>
      
      
@@ -33,7 +33,9 @@
 import topnav from "../partials/topnav2";
 import backlog from "../Layout/backlog";
 import todo from "../Layout/todos";
-import testcases from '../Layout/testcase'
+import testcases from '../Layout/testcase';
+import overview from '../Layout/overview'
+
 export default {
   name: "page1",
   components: {
@@ -42,6 +44,8 @@ export default {
     backlog,
     todo,
     testcases,
+    overview
+    
   },
 };
 </script>
