@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import  page1 from '@/components/page1/page1.vue'
+import  page1 from '@/components/page1/page1'
 
 export default {
   name: 'Home',

@@ -1,32 +1,51 @@
 <template>
   <div>
-  This is Page1
+ 
+    <topnav></topnav>
+
+    <div class="container mt-4 ">
+      <div class="row row-cols-5 main ml-5 pl-1">
+        <!-- Backlog here -->
+        <backlog title="Backlog"></backlog>
+
+        <!-- Todo Header Column here -->
+        <div class="col">
+          <todo title="Todo"></todo>
+        </div>
+
+        <div class="col">
+          <todo title="In Progress"></todo>
+        </div>
+
+        <div class="col">
+          <todo title="In Review"></todo>
+        </div>
+
+        <div class="col">
+          <todo title="Done"></todo>
+        </div>
+        
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import topnav from "../partials/topnav2";
+import backlog from "../Layout/backlog";
+import todo from "../Layout/todos";
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  name: "page1",
+  components: {
+    topnav,
+    backlog,
+    todo,
+  },
+  data(){
+    return {
+      url: 'https://res.cloudinary.com/alphajeez/image/upload/v1597615351/user1_vlpp2n.png'
+    }
   }
-}
+  
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>

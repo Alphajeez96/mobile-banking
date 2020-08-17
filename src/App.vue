@@ -1,42 +1,38 @@
 <template>
   <div id="app">
-  <mnav></mnav>
-    <router-view/>
+    <sidenav></sidenav>
+    <mnav></mnav>
+    <router-view />
   </div>
 </template>
 
 <style>
-:root{
-
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@800&family=Nunito+Sans:wght@300;400;600&display=swap");
+:root {
+  --background-color: #f7f7f7;
+  --muli-font: "Mulish", sans-serif;
+  --primary-font-family: "Nunito Sans", sans-serif;
+  --main-font-size: 14px;
+  --primary-font-10: 10px;
+  --primary-font-size: 14px;
+  --primary-font-size: 18px;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--primary-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  background: var(--background-color);
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
 </style>
 
 <script>
-import mnav from './components/partials/navbar'
+import mnav from "./components/partials/navbar";
+import sidenav from "./components/partials/sidebar";
 export default {
-  components:{
-    mnav
-  }
-}
+  components: {
+    mnav,
+    sidenav,
+  },
+};
 </script>
