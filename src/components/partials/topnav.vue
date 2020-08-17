@@ -3,39 +3,39 @@
     <div class="container pl-0">
       <div class="row">
         <!-- Top Nav first division column here-->
-        <div class="col-md-6 col-lg-6 ">
-        
-          <div class="top__nav ">
-            <ul class="d-inline-flex ">
+        <div class="col-md-6 col-lg-6">
+          <div class="top__nav">
+            <ul class="d-inline-flex">
               <a
                 href
                 class="active top__nav__link"
-                v-for="tab in tabs "
+                v-for="tab in tabs"
                 :key="tab"
-                @click="selected = tab; "
+                @click="selected = tab"
                 :class="['tab-btn', { active: selected === tab }]"
               >
-                <li>{{tab}}</li>
+                <li>{{ tab }}</li>
               </a>
             </ul>
-             <!-- <component :is="selected" class="tab"></component> -->
+            <!-- <component :is="selected" class="tab"></component> -->
           </div>
         </div>
 
-  <!-- Top Nav Second division column here-->
-        <div class="col-md-6 col-lg-6 mt-4 d-flex flex-row ">
-        <div class="mx-3 "></div>
-         <!-- Toggle Switch  here -->
-        <p class="mx-3 task" >All Task</p>
-        <label class="switch ">
-          <input type="checkbox" checked />
-          <span class="slider round"></span>
-        </label>
-        <p class="mx-3 modules">All Modules</p>
+        <!-- Top Nav Second division column here-->
+        <div class="col-md-6 col-lg-6 mt-4 d-flex flex-row">
+          <div class="mx-3"></div>
 
-        <div class='mx-4'></div>
+          <!-- Toggle Switch  here -->
+          <p class="mx-3 task">All Task</p>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+          <p class="mx-3 modules">All Modules</p>
 
-         <span class='mx-2'>
+          <div class="mx-4"></div>
+
+          <span class="mx-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -63,21 +63,18 @@
           </span>
           <p class="mx-2 deadline">
             Project Dealine :
-            <span>{{duration}}</span>
+            <span>{{ duration }}</span>
           </p>
-
         </div>
-
       </div>
-<hr class="border-b">
+      <hr class="border-b" />
     </div>
-    
   </div>
 </template>
 
 <script>
 export default {
-  props:['duration'],
+  props: ["duration"],
   data() {
     return {
       tabs: ["Overview", "Teams", "Modules", "Files", "Progress"],
@@ -98,10 +95,10 @@ ul {
 }
 
 .border-b {
-    width: 90%;
-    position: relative;
-    bottom: 32px;
-    left: 30px;
+  width: 90%;
+  position: relative;
+  bottom: 32px;
+  left: 30px;
 }
 .top__nav__link {
   color: #03293d;
@@ -119,12 +116,6 @@ ul {
 a {
   text-decoration: none !important;
 }
-/*
-.active{
-    border-bottom: 1px solid red;
-    position: relative;
-    top: px;
-}*/
 
 /* switch toggle here */
 

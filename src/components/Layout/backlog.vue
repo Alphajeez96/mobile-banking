@@ -1,9 +1,9 @@
 <template>
   <div>
-    <!-- Backlog Header COumn here -->
+    <!-- Backlog Header Column here -->
     <div class="col">
       <div class="row header">
-        <div class="col-2">{{title}}</div>
+        <div class="col-2">{{ title }}</div>
         <div class="col dots">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -115,16 +115,28 @@
                   />
                 </svg>
               </span>
-              <span class="mx-2">Due {{date}}</span>
+              <span class="mx-2">Due {{ date }}</span>
             </p>
           </div>
           <!-- User Images here  here -->
           <div class="col">
             <div class="row img__holder">
               <img class src="../../assets/Vectors/e1.png" alt />
-              <img class="position-absolute img__two" src="../../assets/Vectors/e2.png" alt />
-              <img class="position-absolute img__three" src="../../assets/Vectors/e3.png" alt />
-              <img class="position-absolute img__four" src="../../assets/Vectors/e4.png" alt />
+              <img
+                class="position-absolute img__two"
+                src="../../assets/Vectors/e2.png"
+                alt
+              />
+              <img
+                class="position-absolute img__three"
+                src="../../assets/Vectors/e3.png"
+                alt
+              />
+              <img
+                class="position-absolute img__four"
+                src="../../assets/Vectors/e4.png"
+                alt
+              />
               <div class="position-absolute elipse">
                 <span>+4</span>
               </div>
@@ -137,69 +149,68 @@
 </template>
 
 <script>
-export default {
-  name: "backlog",
+  export default {
+    name: "backlog",
     props: ["title"],
-  data() {
-    return {
-      date: "Aug 8",
-    };
-  },
-};
+    data() {
+      return {
+        date: "Aug 8",
+      };
+    },
+  };
 </script>
 
-
 <style scoped>
-.add__log__card {
-  background: #ffffff;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  height: 30px;
-  cursor: pointer;
-}
-.header {
-  color: #03293d;
-  font-size: var(--main-font-size);
-  font-weight: Bold;
-}
-.backlog__card {
-  background: #ffffff;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.text p {
-  text-align: left;
-  font-size: 10px;
-  padding: 0px 8px;
-  color: #03293d;
-}
-.img__holder {
-  position: relative;
-}
-.absolute {
-  top: 0;
-}
-.img__two {
-  right: 52px;
-}
-.img__three {
-  right: 40px;
-}
-.img__four {
-  right: 30px;
-}
-.elipse {
-  background: #e8e7ea;
-  opacity: 0.4;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  right: 20px;
-  font-size: 10px;
-  color: #a5a4a4;
-}
-.dots{
-  position: relative;
-  left: 60px;
-}
+  .add__log__card {
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .header {
+    color: #03293d;
+    font-size: var(--main-font-size);
+    font-weight: Bold;
+  }
+  .backlog__card {
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .text p {
+    text-align: left;
+    font-size: 10px;
+    padding: 0px 8px;
+    color: #03293d;
+  }
+  .img__holder {
+    position: relative;
+  }
+  .absolute {
+    top: 0;
+  }
+  .img__two {
+    right: 52px;
+  }
+  .img__three {
+    right: 40px;
+  }
+  .img__four {
+    right: 30px;
+  }
+  .elipse {
+    background: #e8e7ea;
+    opacity: 0.4;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    right: 20px;
+    font-size: 10px;
+    color: #a5a4a4;
+  }
+  .dots {
+    position: relative;
+    left: 60px;
+  }
 </style>

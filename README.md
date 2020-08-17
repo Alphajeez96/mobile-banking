@@ -24,7 +24,7 @@ It is never too late to carry out a  transaction on **Mbank**. <br />
 
 
 
-Try it here : [Demo Date](https://alpha-mobile-bank.netlify.app/)
+Try it here : [Demo](https://alpha-mobile-bank.netlify.app/)
 
   
   
