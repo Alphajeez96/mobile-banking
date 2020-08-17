@@ -56,7 +56,7 @@
       </div>
 
       <!-- Back log display card  here -->
-      <div class="backlog__card mt-3" v-for="i in 7" :key="i">
+      <div class="backlog__card mt-2" v-for="i in 6" :key="i">
         <!-- Text row card  here -->
         <div class="row">
           <div class="col-9 pt-2 text">

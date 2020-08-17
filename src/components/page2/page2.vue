@@ -3,8 +3,8 @@
 
     <topnav></topnav>
 
-    <div class="container mt-4 ">
-      <div class="row row-cols-5 main ml-5 pl-1">
+    <div class="container   mt-4 ">
+      <div class="row row-cols-3">
 
       <div class="col-md-3">
 
@@ -12,11 +12,11 @@
         <backlog title="Modules"></backlog>
       </div>
 
-      <div class="col-md-5">
+      <div class="col-5">
     <testcases title="Added Test Case"></testcases>
       </div>
 
-         <div class="col-md-4">
+         <div class=" ">
     <overview title="Quick Overview"></overview>
       </div>
      
@@ -49,3 +49,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.container{
+  padding-left: 70px;
+}
+</style>>
