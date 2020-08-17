@@ -24,7 +24,7 @@
           </div>
           <!-- custom select-->
           <div class="pt-3 px-3">
-    <CustomSelect :options="['first', 'second']"/>
+    <v-select class="style-chooser" :options="options"></v-select>
           </div>
         </div>
 
@@ -51,6 +51,13 @@ export default {
   props: ["title"],
   data() {
     return {
+        options: [
+      'Pass',
+      'Failed',
+      'Retest',
+       'Untest'
+    ],
+
    
       open: false
     };
@@ -98,6 +105,19 @@ export default {
 .test__btn:focus {
   outline: 0;
 }
+.style-chooser .vs__search::placeholder,
+  .style-chooser .vs__dropdown-toggle,
+  .style-chooser .vs__dropdown-menu {
+    background: #dfe5fb;
+    border: none;
+    color: #394066;
+    text-transform: lowercase;
+    font-variant: small-caps;
+  }
 
+  .style-chooser .vs__clear,
+  .style-chooser .vs__open-indicator {
+    fill: #394066;
+  }
 
 </style>

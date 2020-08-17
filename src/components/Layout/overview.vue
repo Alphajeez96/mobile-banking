@@ -6,7 +6,7 @@
 
     <div class="overview__card mt-3">
       <div class="row">
-        <div class="c">
+        <div>
           <!--Overview Cards here-->
           <div class="p-3 d-flex flex-wrap">
             <card title="Total Modules" count="20" color='#F15832;'></card>
