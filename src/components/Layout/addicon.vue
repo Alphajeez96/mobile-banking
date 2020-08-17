@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!--Plus Icon Her-->
     <span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -37,12 +38,29 @@
             />
             <feOffset dy="3" />
             <feGaussianBlur stdDeviation="5" />
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow"
+              result="shape"
+            />
           </filter>
           <clipPath id="clip0">
-            <rect width="29.16" height="29.16" fill="white" transform="translate(35.9198 32.92)" />
+            <rect
+              width="29.16"
+              height="29.16"
+              fill="white"
+              transform="translate(35.9198 32.92)"
+            />
           </clipPath>
         </defs>
       </svg>
@@ -51,11 +69,10 @@
 </template>
 
 <style scoped>
-svg {
+  svg {
     position: fixed;
     top: 350px;
     right: 70px;
     cursor: pointer;
-}
+  }
 </style>
-

@@ -1,6 +1,7 @@
 <template>
   <div>
     <div>
+      <!-- Cards here -->
       <div class="cards bg mx-2 mt-4" :style="style">
         <div class="d-flex bd-highlight mb-3">
           <div class="p-2 bd-highlight">
@@ -23,40 +24,41 @@
             </svg>
           </div>
 
-          <div class="ml-auto p-2 count">{{count}}</div>
+          <div class="ml-auto p-2 count">{{ count }}</div>
         </div>
-        <div class="d-flex justify-content-start px-3 title">{{title}}</div>
+        <div class="d-flex justify-content-start px-3 title">{{ title }}</div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: "card",
-  props: ["title", "color", "count"],
-  computed: {
-    style() {
-      return "background-color: " + this.color;
+  export default {
+    name: "card",
+    props: ["title", "color", "count"],
+    computed: {
+      style() {
+        // Change Backgroung color dynamically via props here
+        return "background-color: " + this.color;
+      },
     },
-  },
-};
+  };
 </script>
 <style scoped>
-.cards {
-  width: 160px;
-  height: 120px;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-}
-.count {
-  color: white;
-  font-weight: 800;
-  font-size: 24px;
-}
-.title {
-  color: white;
-  font-weight: bold;
-  text-align: left;
-}
+  .cards {
+    width: 160px;
+    height: 120px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+  .count {
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+  }
+  .title {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+  }
 </style>

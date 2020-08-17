@@ -192,7 +192,14 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       />
-                      <line opacity="0.15" x1="18.5" y1="2" x2="18.5" y2="12" stroke="#FCFCFC" />
+                      <line
+                        opacity="0.15"
+                        x1="18.5"
+                        y1="2"
+                        x2="18.5"
+                        y2="12"
+                        stroke="#FCFCFC"
+                      />
                     </svg>
                     <span class="owner px-1">OWNER</span>
                   </span>
@@ -209,7 +216,13 @@
                     viewBox="0 0 25 31"
                     fill="none"
                   >
-                    <ellipse cx="12.5345" cy="11.0095" rx="8.46888" ry="8.63826" fill="white" />
+                    <ellipse
+                      cx="12.5345"
+                      cy="11.0095"
+                      rx="8.46888"
+                      ry="8.63826"
+                      fill="white"
+                    />
                     <path
                       d="M14.5193 12.7697H10.7415L9.96984 14.5665H8.16156L11.8933 6.44651H13.333L17.0647 14.5665H15.291L14.5193 12.7697ZM13.9319 11.4106L12.6304 8.36996L11.3289 11.4106H13.9319Z"
                       fill="#00B394"
@@ -236,8 +249,8 @@
               </li>
 
               <li class="username">
-                {{username}}
-                <span class="useremail">{{useremail}}</span>
+                {{ username }}
+                <span class="useremail">{{ useremail }}</span>
               </li>
 
               <li class="mx-3">
@@ -268,107 +281,105 @@
 </template>
 
 <script>
-export default {
-  props: ['imgPath', 'username', 'useremail'],
-  data() {
-    return {
-      hover: false,
-      user: {
-        path:
-          "https://res.cloudinary.com/alphajeez/image/upload/v1597615351/user1_vlpp2n.png",
-        name: "Chioma Davis",
-        email: "Chioma@natterbase",
+  export default {
+    props: ["imgPath", "username", "useremail"],
+    data() {
+      return {
+        hover: false,
+        user: {
+          path:
+            "https://res.cloudinary.com/alphajeez/image/upload/v1597615351/user1_vlpp2n.png",
+          name: "Chioma Davis",
+          email: "Chioma@natterbase",
+        },
+      };
+    },
+    computed: {
+      img() {
+        return this.imgPath;
       },
-    };
-
-  },
-  computed:{
-    img() {
-return this.imgPath
-    }
-  }
-
-};
+    },
+  };
 </script>
 <style scoped>
-header {
-  width: 100%;
-  background: #fbfbfb;
-  padding: 12px 0px;
-}
+  header {
+    width: 100%;
+    background: #fbfbfb;
+    padding: 12px 0px;
+  }
 
-.navbar-nav {
-  margin-bottom: -20px;
-}
-.owner {
-  font-size: var(--primary-font-10);
-  color: #fcfcfc;
-  font-family: var(--muli-font);
-}
-.bg-inherit {
-  background: inherit;
-}
-.input-group
-  > .input-group-append:last-child
-  > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group
-  > .input-group-append:last-child
-  > .input-group-text:not(:last-child),
-.input-group > .input-group-append:not(:last-child) > .btn,
-.input-group > .input-group-append:not(:last-child) > .input-group-text,
-.input-group > .input-group-prepend > .btn,
-.input-group > .input-group-prepend > .input-group-text {
-  border: none;
-  cursor: pointer;
-}
-.input-group > .custom-select:not(:first-child),
-.input-group > .form-control:not(:first-child) {
-  border: none;
-  background: inherit;
-}
-.owner__btn {
-  background: linear-gradient(0deg, #4dbd98, #4dbd98),
-    linear-gradient(0deg, #4dbd98, #4dbd98),
-    linear-gradient(0deg, #4dbd98, #4dbd98), #4dbd98;
-  border-radius: 5px;
-  border: none;
-  padding: 1px 5px;
-}
-.owner__btn:focus,
-[type="button"]:focus {
-  outline: none;
-}
+  .navbar-nav {
+    margin-bottom: -20px;
+  }
+  .owner {
+    font-size: var(--primary-font-10);
+    color: #fcfcfc;
+    font-family: var(--muli-font);
+  }
+  .bg-inherit {
+    background: inherit;
+  }
+  .input-group
+    > .input-group-append:last-child
+    > .btn:not(:last-child):not(.dropdown-toggle),
+  .input-group
+    > .input-group-append:last-child
+    > .input-group-text:not(:last-child),
+  .input-group > .input-group-append:not(:last-child) > .btn,
+  .input-group > .input-group-append:not(:last-child) > .input-group-text,
+  .input-group > .input-group-prepend > .btn,
+  .input-group > .input-group-prepend > .input-group-text {
+    border: none;
+    cursor: pointer;
+  }
+  .input-group > .custom-select:not(:first-child),
+  .input-group > .form-control:not(:first-child) {
+    border: none;
+    background: inherit;
+  }
+  .owner__btn {
+    background: linear-gradient(0deg, #4dbd98, #4dbd98),
+      linear-gradient(0deg, #4dbd98, #4dbd98),
+      linear-gradient(0deg, #4dbd98, #4dbd98), #4dbd98;
+    border-radius: 5px;
+    border: none;
+    padding: 1px 5px;
+  }
+  .owner__btn:focus,
+  [type="button"]:focus {
+    outline: none;
+  }
 
-input[type="search"]:focus {
-  border-color: #f9f9f9;
-  box-shadow: none;
-  outline: 0 none;
-  border: 2px solid rgba(0, 0, 0, 0.15);
-}
-.userprofile {
-  position: relative;
-  bottom: 2px;
-  right: -12px;
-}
-svg {
-  cursor: pointer;
-}
-.username {
-  color: #03293d;
-  font-weight: 600;
-  font-size: (--main-font-size);
-}
-.useremail {
-  color: #23b3e8;
-  font-weight: 600;
-  font-size: var(--primary-font-10);
-  position: relative;
-  bottom: 10px;
-}
+  input[type="search"]:focus {
+    border-color: #f9f9f9;
+    box-shadow: none;
+    outline: 0 none;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+  }
+  .userprofile {
+    position: relative;
+    bottom: 2px;
+    right: -12px;
+  }
+  svg {
+    cursor: pointer;
+  }
+  .username {
+    color: #03293d;
+    font-weight: 600;
+    font-size: (--main-font-size);
+  }
+  .useremail {
+    color: #23b3e8;
+    font-weight: 600;
+    font-size: var(--primary-font-10);
+    position: relative;
+    bottom: 10px;
+  }
 
-::placeholder {
-  color: #2d2d2d;
-  opacity: 0.3;
-  font-size: var(--main-font-size);
-}
+  ::placeholder {
+    color: #2d2d2d;
+    opacity: 0.3;
+    font-size: var(--main-font-size);
+  }
 </style>
