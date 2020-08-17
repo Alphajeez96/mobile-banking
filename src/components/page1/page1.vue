@@ -2,7 +2,7 @@
   <div>
  <mnav imgPath='https://res.cloudinary.com/alphajeez/image/upload/v1597615351/user1_vlpp2n.png' username='Chioma Davis' useremail='Chioma@natterbase'></mnav>
     <topnav duration='6 weeks'></topnav>
-
+        <icon></icon>
     <div class="container mt-4 ">
       <div class="row row-cols-5 main ml-5 pl-1">
         <!-- Backlog here -->
@@ -24,10 +24,12 @@
         <div class="col">
           <todo title="Done"></todo>
         </div>
-        
       </div>
+    
     </div>
+   
     <mfoot></mfoot>
+    
   </div>
 </template>
 
@@ -37,6 +39,7 @@ import topnav from "../partials/topnav";
 import backlog from "../Layout/backlog";
 import todo from "../Layout/todos";
 import mfoot from '../partials/footer'
+import icon from '../Layout/addicon'
 export default {
   name: "page1",
   components: {
@@ -44,7 +47,8 @@ export default {
     topnav,
     backlog,
     todo,
-    mfoot
+    mfoot,
+    icon
   },
   data(){
     return {
