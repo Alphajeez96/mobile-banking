@@ -55,6 +55,7 @@ svg {
     position: fixed;
     top: 350px;
     right: 70px;
+    cursor: pointer;
 }
 </style>
 
