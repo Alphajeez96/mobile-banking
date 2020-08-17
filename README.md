@@ -43,6 +43,9 @@ Try it here : [Demo](https://alpha-mobile-bank.netlify.app/)
 
 ![Nav bar](https://raw.githubusercontent.com/Alphajeez96/mobile-banking/master/src/assets/General/Screenshot_1.png)
 <br/>
+<br/>
+<br/>
+<br/>
 ![Nav bar](https://raw.githubusercontent.com/Alphajeez96/mobile-banking/master/src/assets/General/Screenshot_7.png)
 
   
