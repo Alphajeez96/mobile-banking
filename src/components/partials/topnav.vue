@@ -17,15 +17,15 @@
       <div class="mt-4 flex-fill d-flex bd-highlight">
         <!-- Toggle Switch  here -->
         <p class="mx-3 task">All Task</p>
-        <label class="switch mx-3">
+        <label class="switch ">
           <input type="checkbox" checked />
           <span class="slider round"></span>
         </label>
-        <p class="mx-3 modules">All Modules</p>
+        <p class="mx-4 modules">All Modules</p>
 
         <!-- Project deadline  here -->
         <div class="d-flex">
-          <span class>
+          <span class='mx-2'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -51,7 +51,7 @@
               />
             </svg>
           </span>
-          <p class="mx-2">
+          <p class="mx-2 deadline">
             Project Dealine :
             <span>{{duration}}</span>
           </p>
@@ -174,5 +174,9 @@ input:checked + .slider:before {
   font-weight: bold;
   font-size: var(--main-font-size);
 }
-
+.deadline{
+  color:#4DBD98;
+  font-size: var(--main-font-size);
+  font-weight: bold;
+}
 </style>

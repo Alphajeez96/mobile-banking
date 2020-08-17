@@ -3,8 +3,8 @@
     <!-- Backlog Header COumn here -->
     <div class="col">
       <div class="row header">
-        <div class="col">Backlog</div>
-        <div class="col">
+        <div class="col-2">Backlog</div>
+        <div class="col ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="12"
@@ -156,6 +156,11 @@ export default {
   height: 30px;
   cursor: pointer;
 }
+.header{
+  color: #03293D;
+    font-size: var(--main-font-size);
+  font-weight: 600;
+}
 .backlog__card {
   background: #ffffff;
   border-radius: 5px;
@@ -190,4 +195,5 @@ export default {
   font-size: 10px;
   color: #a5a4a4;
 }
+
 </style>
